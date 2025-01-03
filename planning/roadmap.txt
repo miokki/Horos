@@ -1,0 +1,38 @@
+Plan Wdrożenia Aplikacji Horos
+
+Etap 1: Przygotowanie Środowiska (1 tydzień)
+- [ ] Konfiguracja repozytorium Git
+- [ ] Setup środowiska developerskiego
+- [ ] Wybór i konfiguracja narzędzi CI/CD
+- [ ] Przygotowanie środowisk testowych
+
+Etap 2: Podstawowa Funkcjonalność (3 tygodnie)
+- [ ] Implementacja formularza wprowadzania danych
+- [ ] Integracja z Swiss Ephemeris
+- [ ] Podstawowy widok horoskopu
+- [ ] Cache'owanie wyników w plikach JSON
+- [ ] Integracja z OpenRouter API
+
+Etap 3: Rozszerzenie Funkcjonalności (2 tygodnie)
+- [ ] Implementacja wykresu urodzeniowego
+- [ ] Dodanie interaktywnego koła zodiaku
+- [ ] Responsywny design
+- [ ] System płatności (Tpay + BitPay)
+
+Etap 4: Testowanie i Optymalizacja (1 tydzień)
+- [ ] Testy jednostkowe i integracyjne
+- [ ] Testy wydajnościowe
+- [ ] Optymalizacja zapytań do API
+- [ ] Testy bezpieczeństwa
+
+Etap 5: Wdrożenie Produkcyjne (1 tydzień)
+- [ ] Konfiguracja Vercel dla frontendu
+- [ ] Konfiguracja Render dla backendu
+- [ ] Migracja danych do SQLite
+- [ ] Finalne testy akceptacyjne
+
+Etap 6: Utrzymanie i Rozwój (ciągły)
+- [ ] Monitorowanie błędów
+- [ ] Regularne aktualizacje zależności
+- [ ] Implementacja nowych funkcjonalności
+- [ ] Rozszerzenie o nowe języki

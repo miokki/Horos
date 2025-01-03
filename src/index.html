@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horos - Astrologia Obliczeniowa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Horos</h1>
+            <p class="subtitle">Nowoczesne narzędzie do analizy astrologicznej</p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h2>Dane wejściowe</h2>
+                <form id="astroForm">
+                    <div class="form-group">
+                        <label for="birthDate">Data urodzenia:</label>
+                        <input type="date" id="birthDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthTime">Godzina urodzenia:</label>
+                        <input type="time" id="birthTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Miejsce urodzenia:</label>
+                        <input type="text" id="location" placeholder="Wpisz miasto" required>
+                    </div>
+                    <button type="submit">Oblicz pozycje planet</button>
+                </form>
+            </section>
+            
+            <section class="results-section">
+                <h2>Wyniki</h2>
+                <div id="results"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+Lista Technologii dla Aplikacji Horos
+
+1. Frontend:
+   - React.js + TypeScript
+     * Popularna biblioteka do budowy interfejsów
+     * Silne typowanie zwiększa bezpieczeństwo
+     * Bogata ekosystem komponentów
+   - Chart.js
+     * Prosta integracja z React
+     * Wsparcie dla interaktywnych wykresów
+   - React Hook Form
+     * Efektywne zarządzanie formularzami
+     * Integracja z walidacją
+
+2. Backend:
+   - Node.js + Express
+     * Wysoka wydajność dla I/O bound aplikacji
+     * Prosta integracja z Swiss Ephemeris
+     * Łatwe tworzenie REST API
+   - Swiss Ephemeris
+     * Dokładne obliczenia astrologiczne
+     * Sprawdzona biblioteka
+     * Wsparcie dla różnych systemów współrzędnych
+
+3. Integracja z LLM:
+   - OpenRouter API
+     * Zaawansowane generowanie tekstu
+     * Wsparcie dla JSON jako formatu danych
+     * Możliwość dostosowania promptów
+   - JSON Schema
+     * Standaryzacja formatu danych
+     * Łatwa walidacja struktur
+
+4. Baza Danych:
+   - SQLite (początkowo pliki JSON)
+     * Lekka, wbudowana baza danych
+     * Brak konieczności osobnego serwera
+     * Łatwa migracja z plików JSON
+
+5. Narzędzia Deweloperskie:
+   - Git + GitHub
+     * Kontrola wersji
+     * Współpraca zespołowa
+   - ESLint + Prettier
+     * Spójność stylu kodu
+     * Automatyczne formatowanie
+   - Jest + React Testing Library
+     * Testy jednostkowe i integracyjne
+     * Wsparcie dla TDD
+
+6. Hosting:
+   - Vercel (Frontend)
+     * Prosta integracja z React
+     * Automatyczne wdrożenia z GitHub
+   - Render (Backend)
+     * Wsparcie dla Node.js
+     * Automatyczne skalowanie

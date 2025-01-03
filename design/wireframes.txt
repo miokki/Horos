@@ -1,0 +1,37 @@
+Wireframes - Główne Widoki Aplikacji Horos
+
+1. Strona Główna:
+   - Nagłówek: Logo + nazwa aplikacji
+   - Sekcja wprowadzająca: Krótki opis aplikacji
+   - Formularz wprowadzania danych:
+     * Data urodzenia (kalendarz)
+     * Godzina urodzenia (selektor czasu)
+     * Miejsce urodzenia (autocomplete z mapą)
+     * Przycisk "Generuj Horoskop"
+   - Stopka: Informacje prawne + linki
+
+2. Widok Horoskopu:
+   - Nagłówek: Dane użytkownika (data, miejsce)
+   - Sekcja główna:
+     * Lista planet z interpretacjami (accordion)
+     * Wykres urodzeniowy (interaktywny)
+     * Przycisk "Pobierz PDF"
+   - Panel boczny:
+     * Koło zodiaku (interaktywne)
+     * Opis aktualnych aspektów
+   - Stopka: Przycisk "Nowy Horoskop"
+
+3. Wykres Urodzeniowy:
+   - Centralny wykres: Koło z 12 domami
+   - Planety: Ikony z tooltipami
+   - Legenda: Kolory i symbole
+   - Kontrolki:
+     * Zoom
+     * Obracanie
+     * Podświetlanie aspektów
+   - Przycisk "Powrót do horoskopu"
+
+4. Responsywność:
+   - Mobile: Kolumnowy układ, uproszczone formularze
+   - Tablet: Dwu-kolumnowy układ głównych sekcji
+   - Desktop: Trzy-kolumnowy układ z panelem bocznym

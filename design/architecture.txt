@@ -1,0 +1,28 @@
+Diagram Architektury Aplikacji Horos
+
+1. Warstwa Frontend:
+   - React.js (SPA)
+   - Chart.js dla wykresów
+   - Formularz wprowadzania danych
+   - Widok horoskopu
+   - Interaktywne koło zodiaku
+
+2. Warstwa Backend:
+   - Node.js + Express
+   - Integracja z Swiss Ephemeris
+   - API do komunikacji z LLM (DeepSeek v3)
+   - Cache wyników (pliki JSON)
+
+3. Warstwa Integracji:
+   - API do Swiss Ephemeris
+   - API do DeepSeek v3
+   - Format JSON dla danych astrologicznych
+   - Limit 8000 tokenów na odpowiedź
+
+4. Warstwa Danych:
+   - Pliki JSON dla cache'owania wyników
+   - Potencjalna migracja do SQLite
+   - Schemat danych astrologicznych
+
+Przepływ danych:
+Użytkownik -> Frontend -> Backend -> Swiss Ephemeris -> LLM -> Backend -> Frontend

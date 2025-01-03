@@ -1,0 +1,23 @@
+# Pliki środowiskowe
+.env
+
+# Zależności Node.js
+node_modules/
+
+# Pliki IDE
+.vscode/
+.idea/
+
+# Pliki systemowe
+.DS_Store
+
+# Pliki logów
+*.log
+logs/
+
+# Pliki buildowe
+dist/
+build/
+
+# Pliki cache
+.cache/

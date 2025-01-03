@@ -1,0 +1,102 @@
+Struktury Danych dla Aplikacji Horos
+
+1. Dane Użytkownika:
+```typescript
+interface UserData {
+  id: string; // UUID
+  birthDate: Date;
+  birthTime: string; // HH:mm
+  birthPlace: {
+    city: string;
+    country: string;
+    latitude: number;
+    longitude: number;
+  };
+  createdAt: Date;
+  updatedAt: Date;
+}
+```
+
+2. Dane Astrologiczne:
+```typescript
+interface AstrologicalData {
+  userId: string; // Relacja do UserData
+  planets: {
+    Sun: PlanetPosition;
+    Moon: PlanetPosition;
+    Mercury: PlanetPosition;
+    Venus: PlanetPosition;
+    Mars: PlanetPosition;
+    Jupiter: PlanetPosition;
+    Saturn: PlanetPosition;
+    Uranus: PlanetPosition;
+    Neptune: PlanetPosition;
+    Pluto: PlanetPosition;
+  };
+  houses: HousePosition[];
+  aspects: Aspect[];
+  calculatedAt: Date;
+}
+
+interface PlanetPosition {
+  sign: ZodiacSign;
+  degree: number;
+  house: number;
+}
+
+interface HousePosition {
+  number: number;
+  sign: ZodiacSign;
+  startDegree: number;
+  endDegree: number;
+}
+
+interface Aspect {
+  planet1: PlanetName;
+  planet2: PlanetName;
+  type: AspectType;
+  orb: number;
+}
+```
+
+3. Interpretacja Horoskopu:
+```typescript
+interface Horoscope {
+  userId: string;
+  astroDataId: string;
+  interpretation: string;
+  tokensUsed: number;
+  generatedAt: Date;
+  language: string;
+  version: string;
+}
+
+4. Cache API:
+```typescript
+interface ApiCache {
+  requestHash: string; // SHA-256 hash of request params
+  response: string;
+  createdAt: Date;
+  expiresAt: Date;
+}
+```
+
+5. Enums:
+```typescript
+enum ZodiacSign {
+  Aries = 'Aries',
+  Taurus = 'Taurus',
+  // ... pozostałe znaki
+}
+
+enum PlanetName {
+  Sun = 'Sun',
+  Moon = 'Moon',
+  // ... pozostałe planety
+}
+
+enum AspectType {
+  Conjunction = 'Conjunction',
+  Opposition = 'Opposition',
+  // ... pozostałe aspekty
+}
